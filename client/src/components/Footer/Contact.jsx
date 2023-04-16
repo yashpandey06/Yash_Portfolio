@@ -20,7 +20,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="bg-gradient-to-b from-amber-100 to-amber-500 w-full text-white  h-fit pt-24  mt-24 md:p-12 lg:p-16">
+    <div className="bg-gradient-to-b from-amber-100 to-amber-500 w-full text-black  h-fit pt-24  mt-24 md:p-12 lg:p-16">
       <div className=" text-start bg-blue p-4 flex flex-col justify-center items-center w-fit">
         <h2 className="text-2xl">Get in Touch</h2>
         <p className="text-center">

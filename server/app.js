@@ -1,11 +1,12 @@
-
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
 const axios = require("axios")
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017/clientdb")
+
+mongoose.connect(process.env.DATABASE)
 
 //  creating the client schema
 const userSchema = new mongoose.Schema({
