@@ -15,7 +15,7 @@ const App = () => {
     axios.get("http://localhost:3000").then((response) => {
       // console.log(response.data);
       const data = response.data;
-      for (var i = 0; i < 20; i++) {
+      for (var i = 0; i < 40; i++) {
         console.log(data[i]);
         qoutes.push(data[i]);
       }
