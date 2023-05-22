@@ -1,15 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily:{
-        cursive: ['Permanent+Marker'],
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }
