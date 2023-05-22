@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import Sidebar from "./Sidebar";
 
-const Hamburger = () => {
-  const [state, setState] = useState(true);
+
+const Hamburger = ({navitems}) => {
+  const [state, setState] = useState(false);
 
   const handleClick = () => {
     setState((prevState) => !prevState);
@@ -11,7 +13,7 @@ const Hamburger = () => {
   return (
     <div>
       {state ? (
-        <Sidebar />
+        <Sidebar handleClick={handleClick} navitems={navitems}/>
       ) : (
         <button onClick={handleClick} className="duration-200">
           <svg

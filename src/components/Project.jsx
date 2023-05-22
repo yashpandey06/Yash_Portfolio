@@ -1,9 +1,16 @@
-
+import avatarlink from "../avatar/avatarlink.png";
 
 const Project = () => {
   return (
-    <div>Project</div>
-  )
-}
+    <div
+      name="About"
+      id="about"
+      className="flex grow px- ">
 
-export default Project
+      
+      
+    </div>
+  );
+};
+
+export default Project;

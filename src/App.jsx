@@ -4,20 +4,59 @@ import About from "./components/About"
 import Contact from "./components/Contact"
 import Project from "./components/Project"
 import Layout from "./components/Layout"
+import { useEffect, useState } from "react"
+import Loader from "./components/Loader/Loader"
+import { createContext } from "react"
+import ReactSwitch from "react-switch";
 
+
+export const ThemeContext = createContext(null);
 
 const App = () => {
+  const [theme, setTheme] = useState("light");
+  const [load, setLoad] = useState(false);
+
+  useEffect(() => {
+    setLoad(true)
+    setTimeout(() => {
+      setLoad(false)
+    }, 3000)
+  }, []);
+  useEffect(() => {
+    const curtheme = window.localStorage.getItem("pagetheme")
+    setTheme(JSON.parse(curtheme))
+    
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem("pagetheme", JSON.stringify(theme));
+   
+  }, [theme]);
+
+
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Project />} />
-        </Route>
-      </Routes>
-    </div>
+    <ThemeContext.Provider value={theme}>
+
+
+  
+    <>
+      {
+        load ? <Loader load={load} setLoad={setLoad} /> :
+          <>
+            <div className="App  ">
+              <Routes>
+                <Route path="/" element={<Layout />}>
+                  <Route index element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/projects" element={<Project />} />
+                </Route>
+              </Routes>
+            </div>
+          </>
+      }
+    </>
+    </ThemeContext.Provider>
   )
 }
 
