@@ -13,7 +13,7 @@
 }
 
 .App {
-  @apply bg-gradient-to-b from-gray-950 via-black to-gray-950 text-white min-h-screen w-screen
+  @apply bg-gradient-to-b from-gray-950 via-black to-gray-950/90 text-white min-h-screen w-screen
 }
 
 @layer base {
@@ -25,4 +25,15 @@
   #header {
     font-family: 'Space Grotesk', sans-serif;
   }
+}
+.menu-open {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-closed {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }

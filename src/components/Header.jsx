@@ -8,7 +8,7 @@ const Header = () => {
     const navitems = useContext(Navbaritems)
 
     return (
-        <header id="header" className="p-4">
+        <header id="header" className="p-4 ">
             <nav className="flex flex-row justify-between grow items-center my-2 mx-auto bg-fixed ">
                 <NavLink className="flex gap-4" to="/">
                     <div className="text-2xl flex">

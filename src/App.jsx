@@ -7,7 +7,7 @@ import Layout from "./components/Layout"
 import { useEffect, useState } from "react"
 import Loader from "./components/Loader/Loader"
 import { createContext } from "react"
-import ReactSwitch from "react-switch";
+
 
 
 export const ThemeContext = createContext(null);
