@@ -3,42 +3,48 @@
 import { useState } from "react";
 import MediaCard from "./ProjectImages/MediaCard";
 
+
 const Project = () => {
   const [projects, setProjects] = useState([
     {
       id: 1,
       name: "TalkBot",
-      explain: "explain",
-      livelink: "#",
-      repo: "repolink"
+      image:"Talkbot.png",
+      explain: "A talkbot built solely on python and its two renowned library name Pytxx3 and Sound-Recognition library.",
+      livelink: "Null",
+      repo: <a target="blank" href="https://github.com/yashpandey06/TALKBOT">Code</a>
     },
     {
       id: 2,
       name: "ChatBot",
-      explain: "explain",
-      livelink: "deploylink",
-      repo: "repolink"
+      image: "Chatbot.jpg",
+      explain: "A chatbot web app with proper frontend and backened , used OPEN AI API  as a backened to fetch the results of the user query.",
+      livelink:<a target="blank" href="https://github.com/yashpandey06/ChatBot">Null</a>,
+      repo:  <a target="blank" href="https://github.com/yashpandey06/ChatBot">Code</a>
     },
     {
       id: 3,
       name: "Crypto Webapp",
-      explain: "",
-      livelink: "deploylink",
-      repo: "repolink"
+      image:"Crypto.png",
+      explain: "This Web App shows the current market rates of top 100 cryptocurrencies here the results are fetched from Coingecko API.",
+      livelink: <a target="blank" href="https://crypto-app-git-crypto-yashpandey06.vercel.app/">Live</a>,
+      repo:  <a target="blank" href="https://github.com/yashpandey06/Crypto_App">Code</a>
     },
     {
       id: 4,
       name: "Landing Page",
-      explain: "explain",
-      livelink: "deploylink",
-      repo: "repolink"
+      image: "Rethink.png",
+      explain: "A landing page of a social marketing agency.",
+      livelink:<a target="blank" href="https://retinkmedia.netlify.app/">Live</a>,
+      repo:  <a target="blank" href="https://github.com/yashpandey06/Retink_Media-Website">Code</a>
     },
     {
       id: 5,
       name: "Link Tree",
-      explain: "explain",
-      livelink: "deploylink",
-      repo: "repolink"
+      image: "LinkTree.png",
+      explain: "A single page webApp kindoff similar to LinkTree where I can keep my professional and social links.",
+      livelink: <a target="blank" href="https://yash-link-tree.netlify.app/">Live</a>,
+      repo:  <a target="blank" href="https://github.com/yashpandey06/LinkTree">Code</a>
     },
 
   ])
@@ -46,7 +52,7 @@ const Project = () => {
     <div
       name="About"
       id="about"
-      className="flex grow  ">
+      className="flex  ">
       <MediaCard projects={projects} />
     </div>
   );

@@ -16,7 +16,8 @@ const About = () => {
                     {
                         <Typewriter
                             options={{
-                                strings: ["  I am currently exploring MERN stack."],
+
+                                strings: ["Software Developer in building"],
                                 delay: 20,
                                 deleteSpeed: 30,
                                 autoStart: true,
@@ -29,7 +30,7 @@ const About = () => {
                 </p>
                 <div className="Line-break "></div>
                 <p className="text-2xl text-slate-300 ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quisquam quibusdam cumque assumenda sapiente maiores amet odio nobis dolores beatae.
+                    I am currently exploring the  <span className="text-yellow-200">MERN</span> and consider myself a web enthusiast. I am constantly intrigued by the ever-changing technology landscape and strive to stay updated by actively building and learning new things.
                 </p>
                 <SocialLinks />
             </div>

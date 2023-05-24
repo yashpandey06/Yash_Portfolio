@@ -7,6 +7,7 @@ import Layout from "./components/Layout"
 import { useEffect, useState } from "react"
 import Loader from "./components/Loader/Loader"
 import { createContext } from "react"
+import Skills from "./components/Skills"
 
 
 
@@ -50,6 +51,7 @@ const App = () => {
                   <Route path="/about" element={<About />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/projects" element={<Project />} />
+                  <Route path="/skills" element={<Skills />} />
                 </Route>
               </Routes>
             </div>

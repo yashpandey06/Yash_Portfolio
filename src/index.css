@@ -19,21 +19,9 @@
 @layer base {
   html {
     font-family: 'Anton', sans-serif;
-
   }
 
   #header {
     font-family: 'Space Grotesk', sans-serif;
   }
-}
-.menu-open {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.menu-closed {
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: opacity 0.3s ease, transform 0.3s ease;
 }

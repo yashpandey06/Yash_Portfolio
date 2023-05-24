@@ -20,7 +20,7 @@ const Contact = () => {
                             name="name"
                             placeholder="Enter your name"
                             required
-                            className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                            className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none "
                         />
                         <input
                             type="email"
@@ -35,7 +35,7 @@ const Contact = () => {
                             rows="10"
                             className="p-2 border-2 bg-transparent rounded-md text-slate-50 focus:outline "
                         ></textarea>
-                        <button className="text-white bg-gradient-to-l from-yellow-500 to-cyan-500 py-3 px-6 my-8 rounded-md mx-auto flex item-center">
+                        <button className="  text-black bg-yellow-300 hover:text-black hover:bg-yellow-500 duration-200 py-3 px-6 my-8 rounded-md mx-auto flex item-center">
                             Lets talk
                         </button>
                     </form>

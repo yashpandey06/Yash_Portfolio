@@ -10,11 +10,7 @@ export const Navbaritems = createContext();
 const Layout = () => {
 
   const [navitems] = useState([
-    {
-      id: 1,
-      item: "Home",
-      path:"/"
-    },
+    
     {
       id: 2,
       item: "About",
@@ -29,6 +25,11 @@ const Layout = () => {
       id: 4,
       item: "Projects",
       path:"/projects"
+    },
+    {
+      id: 5,
+      item: "Skills",
+      path:"/skills"
     },
 
   ])

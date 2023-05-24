@@ -1,8 +1,6 @@
 import SocialLinks from "../components/SocialLinks"
 import { NavLink } from "react-router-dom"
 
-
-
 const Home = () => {
     return (
         <div
@@ -13,7 +11,8 @@ const Home = () => {
 
 
                 <span className="mt-20 text-4xl">
-                I am <NavLink to="/" className="text-yellow-200 font-medium"> Yash Pandey</NavLink>
+                Bonjour !..  <span>
+                I am <NavLink to="/" className="text-yellow-200 font-medium"> Yash Pandey</NavLink>  </span> 
                 </span>
                 <div className="Line-break "></div>
                 <p className=" text-xl md:text-2xl  text-slate-300">

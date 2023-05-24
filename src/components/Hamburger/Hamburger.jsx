@@ -19,7 +19,7 @@ const Hamburger = ({ navitems }) => {
 
       {state ?
 
-        <Menuitems state={state} handleClick={handleClick}/> :
+        <Menuitems state={state} handleClick={handleClick} /> :
         <button onClick={handleClick} className="duration-200">
           <MenuOpenIcon />
         </button>
