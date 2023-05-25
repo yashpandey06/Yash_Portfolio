@@ -1,7 +1,9 @@
+
 import SocialLinks from "../components/SocialLinks"
 import { NavLink } from "react-router-dom"
 
 const Home = () => {
+    
     return (
         <div
             name="Home"
