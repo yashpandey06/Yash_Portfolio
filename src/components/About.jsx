@@ -19,7 +19,7 @@ const About = () => {
 
                                 strings: ["Learning Software Development"],
                                 delay: 20,
-                                deleteSpeed: 30,
+                                deleteSpeed: 40,
                                 autoStart: true,
                                 loop: true,
                             }}
