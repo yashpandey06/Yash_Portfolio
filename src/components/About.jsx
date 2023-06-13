@@ -17,7 +17,7 @@ const About = () => {
                         <Typewriter
                             options={{
 
-                                strings: ["Learning Software Development"],
+                                strings: ["Software Development"],
                                 delay: 20,
                                 deleteSpeed: 40,
                                 autoStart: true,

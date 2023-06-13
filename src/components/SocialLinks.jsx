@@ -38,6 +38,7 @@ const SocialLinks = () => {
         <div className="flex flex-row gap-4 items-center">
             {
                 links.map((link) => (
+                    
                     <NavLink key={link.id} to={link.link} target="blank" className="hover:scale-x-105 duration-200">{link.img}</NavLink>
 
                 ))
