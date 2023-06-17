@@ -21,7 +21,7 @@ const App = () => {
     setLoad(true)
     setTimeout(() => {
       setLoad(false)
-    }, 5000)
+    }, 3000)
   }, []);
   useEffect(() => {
     const curtheme = window.localStorage.getItem("pagetheme")
