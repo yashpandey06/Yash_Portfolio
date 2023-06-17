@@ -16,20 +16,21 @@ const Layout = () => {
       item: "About",
       path:"/about"
     },
+    
     {
-      id: 3,
-      item: "Contact",
-      path:"/contact"
-    },
-    {
-      id: 4,
+      id: 2,
       item: "Projects",
       path:"/projects"
     },
     {
-      id: 5,
+      id: 4,
       item: "Skills",
       path:"/skills"
+    },
+    {
+      id: 5,
+      item: "Contact",
+      path:"/contact"
     },
 
   ])

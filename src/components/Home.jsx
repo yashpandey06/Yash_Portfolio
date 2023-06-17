@@ -1,7 +1,6 @@
 
 import SocialLinks from "../components/SocialLinks"
 import { NavLink } from "react-router-dom"
-import Atropos from 'atropos/react';
 const Home = () => {
 
     return (

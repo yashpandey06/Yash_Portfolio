@@ -7,6 +7,14 @@ import MediaCard from "./ProjectImages/MediaCard";
 const Project = () => {
   const [projects, setProjects] = useState([
     {
+      id: 66,
+      name: "Bluff",
+      image:"",
+      explain: "A diarywriting web app with proper function of frontend and backened, user  authentication is required so that they can  keep their stories secretly. ",
+      livelink: "Null",
+      repo: <a target="blank" href="https://github.com/yashpandey06/TALKBOT">Code</a>
+    },
+    {
       id: 1,
       name: "TalkBot",
       image:"Talkbot.png",
