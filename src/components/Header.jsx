@@ -1,11 +1,9 @@
+/* eslint-disable react/prop-types */
+
 import { NavLink } from "react-router-dom"
-import Hamburger from "./Hamburger/Hamburger"
-import { Navbaritems } from "./Layout"
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+const Header = ({bar,handelbar}) => {
 
-import { useContext } from "react"
-
-const Header = () => {
-    const navitems = useContext(Navbaritems)
 
     return (
         <header id="header" className="p-4 ">
@@ -15,10 +13,13 @@ const Header = () => {
                         <div>yash</div>
                         {/* <div className=" hidden md:flex text-sm ">(home)</div> */}
                     </div>
-
                 </NavLink>
-                <div className="flex     lg:hidden w-6 h-6"><Hamburger navitems={navitems} /></div>
-                <ul className="hidden lg:flex justify-center items-center gap-4 ">
+                <button className="p-1" onClick={() => {
+                    handelbar(bar)
+                }}>
+                    <MenuOpenIcon fontSize="large" />
+                </button>
+                {/* <ul className="hidden lg:flex justify-center items-center gap-4 ">
                     {
                         navitems.map((item) => {
                             // { console.log(item) }
@@ -27,8 +28,7 @@ const Header = () => {
                             )
                         })
                     }
-
-                </ul>
+                </ul> */}
             </nav>
         </header>
     )

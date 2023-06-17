@@ -5,7 +5,7 @@ import { BsTwitter } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { useState } from "react";
-
+import {motion} from "framer-motion"
 
 const SocialLinks = () => {
     const [links] = useState([
@@ -35,7 +35,11 @@ const SocialLinks = () => {
         },
     ]);
     return (
-        <div className="flex flex-row gap-4 items-center">
+        <motion.div className="flex flex-row gap-4 items-center"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
+        >
             {
                 links.map((link) => (
                     
@@ -44,7 +48,7 @@ const SocialLinks = () => {
                 ))
             }
 
-        </div>
+        </motion.div>
     )
 }
 

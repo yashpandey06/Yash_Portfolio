@@ -2,6 +2,7 @@ import { Outlet } from "react-router"
 import Header from "./Header"
 import { useState } from "react"
 import { createContext } from 'react';
+import Menuitems from "../components/MenuBar/Menuitems"
 
 
 export const Navbaritems = createContext();
@@ -10,34 +11,46 @@ export const Navbaritems = createContext();
 const Layout = () => {
 
   const [navitems] = useState([
-    
+
     {
       id: 2,
       item: "About",
-      path:"/about"
+      path: "/about"
     },
-    
+
     {
       id: 2,
       item: "Projects",
-      path:"/projects"
+      path: "/projects"
     },
     {
       id: 4,
       item: "Skills",
-      path:"/skills"
+      path: "/skills"
     },
     {
       id: 5,
       item: "Contact",
-      path:"/contact"
+      path: "/contact"
     },
 
   ])
+  const [bar, setBar] = useState(false);
+
+  function handelbar() {
+    setBar(prev => !prev);
+    console.log(bar)
+  }
   return (
     <Navbaritems.Provider value={navitems}>
-      <Header />
-      <Outlet />
+      {
+        bar ? <Menuitems bar={bar} handelbar={handelbar}/> : <>
+          <Header bar={bar} handelbar={handelbar} />
+          <Outlet />
+        </>
+
+      }
+
     </Navbaritems.Provider>
   )
 }

@@ -3,15 +3,19 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { motion } from "framer-motion"
 
 export default function MediaCard({ projects }) {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-5 p-8 h-full'>
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
+      className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-12 p-8 h-full overflow-x-hidden'>
       {projects.map((project) => (
         <Card className='flex flex-col justify-between' key={project.id} sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 120 }}
-           
             title={project.name}
           />
           <CardContent className='flex flex-col justify-between'>
@@ -30,6 +34,6 @@ export default function MediaCard({ projects }) {
           </CardContent>
         </Card>
       ))}
-    </div>
+    </motion.div>
   );
 }
