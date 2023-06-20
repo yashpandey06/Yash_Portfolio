@@ -4,6 +4,7 @@ import { RxLinkedinLogo } from "react-icons/rx";
 import { BsTwitter } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
+import { BsMedium } from "react-icons/bs";
 import { useState } from "react";
 import {motion} from "framer-motion"
 
@@ -33,9 +34,15 @@ const SocialLinks = () => {
             link: "https://instagram.com/__yash_pandey__?igshid=MzNlNGNkZWQ4Mg==",
             name: "Instagram",
         },
+        {
+            id: 5,
+            img: <BsMedium size={30} />,
+            link: "https://medium.com/@pandeyyash7052",
+            name: "Medium",
+        },
     ]);
     return (
-        <motion.div className="flex flex-row gap-4 items-center"
+        <motion.div className="flex flex-row gap-5 md:gap-6 items-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 70, duration: 0.5 }}

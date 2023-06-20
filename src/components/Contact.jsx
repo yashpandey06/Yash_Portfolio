@@ -39,7 +39,6 @@ const Contact = () => {
                             Lets talk
                         </button>
                     </form>
-
                 </div>
             </div>
 
