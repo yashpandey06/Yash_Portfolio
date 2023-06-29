@@ -11,7 +11,7 @@ const About = () => {
         >
             <div className="max-w-screen-lg  mx-auto flex flex-col justify-center w-full h-full gap-6">
 
-                <p className="mt-20 text-2xl md:text-4xl text-white">
+                <p className="mt-14 text-2xl md:text-4xl text-white">
                     {/* I am <NavLink to="/" className="text-yellow-200 font-medium"> Yash Pandey</NavLink> */}
                     {
                         <motion.div
@@ -36,11 +36,11 @@ const About = () => {
 
                 </p>
                 <div className="Line-break "></div>
-                <motion.p 
-                  initial={{ opacity: 0, x: 100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
-                className="text-2xl text-slate-300 "
+                <motion.p
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
+                    className="text-2xl text-slate-300 "
                 >
                     I am currently exploring the  <span className="text-yellow-200">React Native </span> and my tech stack is <span className="text-yellow-200"> MERN </span> , I consider myself a web enthusiast. I am constantly intrigued by the ever-changing technology landscape and strive to stay updated by actively building and learning new things.
                 </motion.p>

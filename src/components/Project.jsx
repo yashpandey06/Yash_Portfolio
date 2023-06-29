@@ -9,7 +9,7 @@ const Project = () => {
     {
       id: 66,
       name: "Bluff",
-      image:"",
+      image: "",
       explain: "A diarywriting web app with proper function of frontend and backened, user  authentication is required so that they can  keep their stories secretly. ",
       livelink: "Null",
       repo: <a target="blank" href="https://github.com/yashpandey06/TALKBOT">Code</a>
@@ -17,7 +17,7 @@ const Project = () => {
     {
       id: 1,
       name: "TalkBot",
-      image:"Talkbot.png",
+      image: "Talkbot.png",
       explain: "A talkbot built solely on python and its two renowned library name Pytxx3 and Sound-Recognition library.",
       livelink: "Null",
       repo: <a target="blank" href="https://github.com/yashpandey06/TALKBOT">Code</a>
@@ -27,24 +27,24 @@ const Project = () => {
       name: "ChatBot",
       image: "Chatbot.jpg",
       explain: "A chatbot web app with proper frontend and backened , used OPEN AI API  as a backened to fetch the results of the user query.",
-      livelink:<a target="blank" href="https://github.com/yashpandey06/ChatBot">Null</a>,
-      repo:  <a target="blank" href="https://github.com/yashpandey06/ChatBot">Code</a>
+      livelink: <a target="blank" href="https://github.com/yashpandey06/ChatBot">Null</a>,
+      repo: <a target="blank" href="https://github.com/yashpandey06/ChatBot">Code</a>
     },
     {
       id: 3,
       name: "Crypto Webapp",
-      image:"Crypto.png",
+      image: "Crypto.png",
       explain: "This Web App shows the current market rates of top 100 cryptocurrencies here the results are fetched from Coingecko API.",
       livelink: <a target="blank" href="https://crypto-app-git-crypto-yashpandey06.vercel.app/">Live</a>,
-      repo:  <a target="blank" href="https://github.com/yashpandey06/Crypto_App">Code</a>
+      repo: <a target="blank" href="https://github.com/yashpandey06/Crypto_App">Code</a>
     },
     {
       id: 4,
       name: "Landing Page",
       image: "Rethink.png",
       explain: "A landing page of a social marketing agency.",
-      livelink:<a target="blank" href="https://retinkmedia.netlify.app/">Live</a>,
-      repo:  <a target="blank" href="https://github.com/yashpandey06/Retink_Media-Website">Code</a>
+      livelink: <a target="blank" href="https://retinkmedia.netlify.app/">Live</a>,
+      repo: <a target="blank" href="https://github.com/yashpandey06/Retink_Media-Website">Code</a>
     },
     {
       id: 5,
@@ -52,7 +52,7 @@ const Project = () => {
       image: "LinkTree.png",
       explain: "A single page webApp kindoff similar to LinkTree where I can keep my professional and social links.",
       livelink: <a target="blank" href="https://yash-link-tree.netlify.app/">Live</a>,
-      repo:  <a target="blank" href="https://github.com/yashpandey06/LinkTree">Code</a>
+      repo: <a target="blank" href="https://github.com/yashpandey06/LinkTree">Code</a>
     },
 
   ])
