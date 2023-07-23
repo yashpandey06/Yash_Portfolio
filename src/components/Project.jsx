@@ -12,47 +12,47 @@ const Project = () => {
       image: "",
       explain: "A diarywriting web app with proper function of frontend and backened, user  authentication is required so that they can  keep their stories secretly. ",
       livelink: "Null",
-      repo: <a target="blank" href="https://github.com/yashpandey06/TALKBOT">Code</a>
+      repo: <a target="blank" href="https://github.com/yashpandey06/TALKBOT">Show</a>
     },
     {
       id: 1,
-      name: "TalkBot",
+      name: "Convo Bot",
       image: "Talkbot.png",
-      explain: "A talkbot built solely on python and its two renowned library name Pytxx3 and Sound-Recognition library.",
+      explain: "A talkbot built solely on python and its two renowned library name Pytxx3 and Sound-Recognition library, used Bard API library of javascript.",
       livelink: "Null",
-      repo: <a target="blank" href="https://github.com/yashpandey06/TALKBOT">Code</a>
+      repo: <a target="blank" href="https://github.com/yashpandey06/TALKBOT">Show</a>
     },
     {
       id: 2,
-      name: "ChatBot",
+      name: "Atithii",
       image: "Chatbot.jpg",
-      explain: "A chatbot web app with proper frontend and backened , used OPEN AI API  as a backened to fetch the results of the user query.",
+      explain: "A chatbot web app with proper frontend and backened , used Google's Bard API  as a backened to fetch the results of the user query.",
       livelink: <a target="blank" href="https://github.com/yashpandey06/ChatBot">Null</a>,
-      repo: <a target="blank" href="https://github.com/yashpandey06/ChatBot">Code</a>
+      repo: <a target="blank" href="https://atithii.vercel.app/">Show</a>
     },
     {
       id: 3,
       name: "Crypto Webapp",
       image: "Crypto.png",
       explain: "This Web App shows the current market rates of top 100 cryptocurrencies here the results are fetched from Coingecko API.",
-      livelink: <a target="blank" href="https://crypto-app-git-crypto-yashpandey06.vercel.app/">Live</a>,
-      repo: <a target="blank" href="https://github.com/yashpandey06/Crypto_App">Code</a>
+      livelink: <a target="blank" href="">Live</a>,
+      repo: <a target="blank" href="https://crypto-app-git-crypto-yashpandey06.vercel.app/">Show</a>
     },
     {
       id: 4,
-      name: "Landing Page",
+      name: "Landing Page (Retink Media)",
       image: "Rethink.png",
       explain: "A landing page of a social marketing agency.",
       livelink: <a target="blank" href="https://retinkmedia.netlify.app/">Live</a>,
-      repo: <a target="blank" href="https://github.com/yashpandey06/Retink_Media-Website">Code</a>
+      repo: <a target="blank" href="https://retinkmedia.netlify.app/">Show</a>
     },
     {
       id: 5,
       name: "Link Tree",
       image: "LinkTree.png",
       explain: "A single page webApp kindoff similar to LinkTree where I can keep my professional and social links.",
-      livelink: <a target="blank" href="https://yash-link-tree.netlify.app/">Live</a>,
-      repo: <a target="blank" href="https://github.com/yashpandey06/LinkTree">Code</a>
+      livelink: <a target="blank" href="">Live</a>,
+      repo: <a target="blank" href="https://yash-link-tree.netlify.app/">Show</a>
     },
 
   ])

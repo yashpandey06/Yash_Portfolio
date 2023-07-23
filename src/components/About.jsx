@@ -18,6 +18,7 @@ const About = () => {
                             initial={{ opacity: 0, y: -100 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
+                            className="text-yellow-200"
                         >
                             <Typewriter
                                 options={{
@@ -42,7 +43,7 @@ const About = () => {
                     transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
                     className="text-2xl text-slate-300 "
                 >
-                    I am currently exploring the  <span className="text-yellow-200">React Native </span> and my tech stack is <span className="text-yellow-200"> MERN </span> , I consider myself a web enthusiast. I am constantly intrigued by the ever-changing technology landscape and strive to stay updated by actively building and learning new things.
+                    I am currently exploring the  <span className="text-yellow-200">Vue JS </span> and my tech stack is <span className="text-yellow-200"> MERN </span> , I consider myself a web enthusiast. I am constantly intrigued by the ever-changing technology landscape and strive to stay updated by actively building and learning new things.
                 </motion.p>
                 <SocialLinks />
             </div>

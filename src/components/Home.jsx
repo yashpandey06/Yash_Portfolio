@@ -12,7 +12,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
         >
-          <span>Bonjour!</span>
+          <span>Bonjour !</span>
           <span>
             I am{" "}
             <NavLink to="/" className="text-yellow-200 font-medium">

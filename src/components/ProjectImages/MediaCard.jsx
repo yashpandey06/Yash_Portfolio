@@ -26,12 +26,12 @@ export default function MediaCard({ projects }) {
               className=''
             />
             <CardContent className='flex flex-col justify-between h-60 overflow-y-auto'>
-              <div className="flex flex-col h-full justify-between">
+              <div className="flex flex-col h-full justify-between ">
                 <Typography
                   gutterBottom
                   variant="h5"
                   component="div"
-                  className="text-center"
+                  className="text-center "
                 >
                   {project.name}
                 </Typography>
@@ -39,9 +39,8 @@ export default function MediaCard({ projects }) {
                   {project.explain}
                 </Typography>
               </div>
-              <div className='flex justify-between mt-4'>
-                <button className='bg-black text-white duration-200 rounded-xl hover:bg-yellow-400 hover:text-black p-2 px-4'>{project.repo}</button>
-                <button className='bg-black text-white duration-200 rounded-xl hover:bg-yellow-400 hover:text-black p-2 px-4'>{project.livelink}</button>
+              <div className='flex justify-between items-center mt-5'>
+                <button className='bg-black text-white duration-200 rounded-xl hover:bg-yellow-400 hover:text-black p-2 px-8'>{project.repo}</button>
               </div>
             </CardContent>
           </Card>

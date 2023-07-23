@@ -6,7 +6,7 @@ import { BsGithub } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsMedium } from "react-icons/bs";
 import { useState } from "react";
-import { motion } from "framer-motion"
+import {motion} from "framer-motion"
 
 const SocialLinks = () => {
     const [links] = useState([
@@ -43,16 +43,16 @@ const SocialLinks = () => {
     ]);
     return (
         <motion.div className="flex flex-row gap-5 md:gap-6 items-center"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
         >
-
+            
             {
                 links.map((link) => (
-
+                    
                     <NavLink key={link.id} to={link.link} target="blank" className="hover:scale-x-105 duration-200">{link.img}</NavLink>
-
+                    
                 ))
             }
 
