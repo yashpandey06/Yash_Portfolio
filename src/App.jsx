@@ -21,17 +21,17 @@ const App = () => {
     setLoad(true)
     setTimeout(() => {
       setLoad(false)
-    }, 3000)
+    }, 8000)
   }, []);
   useEffect(() => {
     const curtheme = window.localStorage.getItem("pagetheme")
     setTheme(JSON.parse(curtheme))
-    
+
   }, []);
 
   useEffect(() => {
     window.localStorage.setItem("pagetheme", JSON.stringify(theme));
-   
+
   }, [theme]);
 
 
@@ -39,25 +39,25 @@ const App = () => {
     <ThemeContext.Provider value={theme}>
 
 
-  
-    <>
-      {
-        load ? <Loader load={load} setLoad={setLoad} /> :
-          <>
-            <div className="App  ">
-              <Routes>
-                <Route path="/" element={<Layout />}>
-                  <Route index element={<Home />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/contact" element={<Contact />} />
-                  <Route path="/projects" element={<Project />} />
-                  <Route path="/skills" element={<Skills />} />
-                </Route>
-              </Routes>
-            </div>
-          </>
-      }
-    </>
+
+      <>
+        {
+          load ? <Loader load={load} setLoad={setLoad} /> :
+            <>
+              <div className="App  ">
+                <Routes>
+                  <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/projects" element={<Project />} />
+                    <Route path="/skills" element={<Skills />} />
+                  </Route>
+                </Routes>
+              </div>
+            </>
+        }
+      </>
     </ThemeContext.Provider>
   )
 }

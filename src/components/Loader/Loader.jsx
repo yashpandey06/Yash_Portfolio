@@ -1,24 +1,26 @@
-/* eslint-disable react/prop-types */
 
-import { RotatingTriangles } from 'react-loader-spinner'
+import './Loader.css'; // Import the CSS styles
 
-// eslint-disable-next-line no-unused-vars
-const Loader = ({ load }, { setLoader }) => {
+const Loader = () => {
     return (
+        <div className="wrap-loader">
+            <div className="loader">
+                {Array.from({ length: 4 }).map((_, index) => (
+                    <div key={index} className={`quarter-circle quarter-${index + 1}`} />
+                ))}
 
-        <div className='loader h-screen w-screen flex justify-center items-center bg-black fixed'>
-            <RotatingTriangles
+                <div className="wrap-text">
+                    <div className="text">
+                        {['L', 'O', 'A', 'D', 'I', 'N', 'G', '...'].map((val, index) => (
+                            <span key={index}>{val}</span>
+                        ))}
+                    </div>
+                </div>
+            </div>
 
-                height="80"
-                width="80"
-                ariaLabel="dna-loading"
-                wrapperStyle={{}}
-                wrapperClass="dna-wrapper"
-                ballColors={['#ff0000', '#00ff00', '#0000ff']}
-                backgroundColor="#F4442E"
-            />
+            <div className="loader-text">wait please</div>
         </div>
-    )
-}
+    );
+};
 
-export default Loader
+export default Loader;
