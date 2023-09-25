@@ -43,7 +43,7 @@ const About = () => {
                     transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
                     className="text-2xl text-slate-300 "
                 >
-                    I am currently exploring   <span className="text-yellow-200">Vue JS </span> and my tech stack is <span className="text-yellow-200"> MERN </span> , I consider myself a web enthusiast. I am constantly intrigued by the ever-changing technology landscape and strive to stay updated by actively building and learning new things.
+                    I am currently exploring   <span className="text-yellow-200"> </span> my tech stack that is <span className="text-yellow-200"> MERN </span> , I consider myself a web enthusiast. I am constantly intrigued by the ever-changing technology landscape and strive to stay updated by actively building and learning new things.
                 </motion.p>
                 <SocialLinks />
             </div>
