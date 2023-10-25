@@ -27,7 +27,7 @@ const Menuitems = ({ bar, handelbar }) => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ type: "spring", stiffness: 100, duration: 0.5 }}
-          className="font-medium text-2xl  lg:text-3xl text-yellow-100"
+          className="font-medium text-4xl bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text"
         >
           <NavLink to="/" onClick={handleNavLinkClick}>
             Home
@@ -35,10 +35,10 @@ const Menuitems = ({ bar, handelbar }) => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
+          initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ type: "spring", stiffness: 100, duration: 0.5 }}
-          className="font-medium text-2xl lg:text-3xl  text-yellow-100"
+          className="font-medium text-4xl  bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text"
         >
           <NavLink to="/about" onClick={() => navigateTo("/about")}>
             About
@@ -49,7 +49,7 @@ const Menuitems = ({ bar, handelbar }) => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ type: "spring", stiffness: 100, duration: 0.5 }}
-          className="font-medium text-2xl lg:text-3xl text-yellow-100"
+          className="font-medium  text-4xl bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text"
         >
           <NavLink to="/skills" onClick={() => navigateTo("/skills")}>
             Skills
@@ -60,10 +60,10 @@ const Menuitems = ({ bar, handelbar }) => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ type: "spring", stiffness: 100, duration: 0.5 }}
-          className="font-medium text-2xl lg:text-3xl text-yellow-100"
+          className="font-medium  text-4xl bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text"
         >
           <NavLink to="/projects" onClick={() => navigateTo("/projects")}>
-            Project
+            Projects
           </NavLink>
         </motion.div>
       </div>

@@ -10,7 +10,7 @@ const Header = ({bar,handelbar}) => {
             <nav className="flex flex-row justify-between grow items-center my-2 mx-auto bg-fixed ">
                 <NavLink className="flex gap-4" to="/">
                     <div className="text-3xl font-medium flex flex-col ">
-                        <div>yash</div>
+                        <div className="font-extrabold">Yash</div>
                         {/* <div className=" hidden md:flex text-sm ">(home)</div> */}
                     </div>
                 </NavLink>

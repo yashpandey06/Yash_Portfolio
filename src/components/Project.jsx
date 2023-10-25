@@ -60,7 +60,7 @@ const Project = () => {
     <div
       name="About"
       id="about"
-      className="flex  ">
+      className="">
       <MediaCard projects={projects} />
     </div>
   );

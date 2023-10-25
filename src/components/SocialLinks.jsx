@@ -42,7 +42,7 @@ const SocialLinks = () => {
         },
     ]);
     return (
-        <motion.div className="flex flex-row gap-5 md:gap-6 items-center"
+        <motion.div className="flex flex-row gap-5 md:gap-7 items-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 70, duration: 0.5 }}

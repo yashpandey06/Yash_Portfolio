@@ -4,40 +4,39 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div name="Home" className="home flex grow m-8 ">
+    <div name="Home" className="home flex grow m-8  ">
       <div className="max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full gap-6 overflow-hidden">
         <motion.span
-          className="mt-20 text-4xl flex flex-col gap-4 md:flex-row"
+          className="mt-14 text-4xl md:text-5xl flex flex-col gap-4 md:flex-row "
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
         >
           <span>Bonjour !</span>
-          <span>
-            I am{" "}
-            <NavLink to="/" className="text-yellow-200 font-medium">
-              Yash Pandey
-            </NavLink>{" "}
+          <span className="flex items-center gap-2">
+            <h2>  I am</h2>
+            <h1 className="bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text ">Yash Pandey</h1>
+
           </span>
         </motion.span>
         <div className="Line-break "></div>
         <motion.p
-          className="text-xl md:text-2xl  text-slate-300"
+          className="text-2xl md:text-3xl   text-slate-300"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
         >
           Working with my hands to make magic happen on the internet. View my{" "}
-          <NavLink to="/projects" className="text-yellow-200 font-medium">
+          <NavLink to="/projects" className="bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text  font-medium">
             Projects
           </NavLink>{" "}
           , Resume,{" "}
-          <NavLink className="text-yellow-200 font-medium" to="/contact">
+          <NavLink className="bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text  font-medium" to="/contact">
             Contact Me
           </NavLink>{" "}
           , or send me an email at{" "}
           <NavLink
-            className="text-yellow-200 font-medium"
+            className="bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text  font-medium"
             to="https://mail.google.com/mail/"
           >
             pandeyyash7052@gmail.com
@@ -49,9 +48,9 @@ const Home = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
-            className="hover:text-yellow-200 text-md flex items-center gap-5 border-2 w-fit p-2"
+            className="hover: bg-gradient-to-b from-blue-200 via-purple-300 to-pink-600 hover:text-transparent bg-clip-text text-md flex items-center gap-5 border-2 w-fit p-2"
           >
-            <p>Know More</p>
+            <p className="text-xl">Know More</p>
             <div className="animate-spin duration-200 hover:animate-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
