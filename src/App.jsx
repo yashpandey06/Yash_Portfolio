@@ -16,7 +16,7 @@ const App = () => {
     setLoad(true)
     setTimeout(() => {
       setLoad(false)
-    }, 10)
+    }, 7000)
   }, []);
 
 
