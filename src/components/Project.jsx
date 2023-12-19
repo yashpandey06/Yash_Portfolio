@@ -24,7 +24,7 @@ const Project = () => {
       id: 2,
       name: "Trell",
       image: "",
-      explain: "A KanBan based project where we can  perform CRUD operations and summarise our daily tasks Frontend - ReactJs ,React Router, Talwind CSS and Backened - ExpressJs, NodedeJs, MongoDB",
+      explain: "A KanBan based project where we can  perform CRUD operations and summarise our daily tasks Frontend - ReactJs ,React Router, Talwind CSS and Backened - ExpressJs, NodeJs, MongoDB",
       repo: <a target="blank" href="https://github.com/yashpandey06/Task-Manager">Show</a>
     },
     {
