@@ -13,13 +13,7 @@ const Project = () => {
       explain: "A diarywriting web app with proper function of frontend and backened, user  authentication is required so that they can  keep their stories secretly. ",
       repo: <a target="blank" href="https://github.com/yashpandey06/BlogAppFrontend">Show</a>
     },
-    {
-      id: 1,
-      name: "Convo Bot",
-      image: "Talkbot.png",
-      explain: "A talkbot built solely on python and its two renowned library name Pytxx3 and Sound-Recognition library, used Bard API library of javascript.",
-      repo: <a target="blank" href="https://github.com/yashpandey06/TALKBOT">Show</a>
-    },
+
     {
       id: 2,
       name: "Trell",
