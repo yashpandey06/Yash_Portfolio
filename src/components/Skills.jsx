@@ -69,7 +69,7 @@ const Skills = () => {
   ]);
 
   return (
-    <div className="flex w-full h-full items-center justify-center flex-col -mt-14">
+    <div className="flex w-full h-full items-center justify-center flex-col lg:-mt-14 md:-mt-10 -mt-8">
       {skills.map((category) => (
         <div
           key={category.category}
@@ -81,7 +81,7 @@ const Skills = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
-            className="flex gap-16 items-center"
+            className="flex lg:gap-16 md:gap-8 gap-4 items-center"
           >
             {category.skills.map((skill) => (
               <div className="hover:scale-125 duration-200 " key={skill.id}>
