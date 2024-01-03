@@ -43,7 +43,7 @@ const About = () => {
                     transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
                     className="text-2xl md:text-3xl   text-slate-300 "
                 >
-                    I am currently exploring  <span  className="bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text">React Native</span> and <span  className="bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text">FastAPI </span><span className="text-yellow-200"> </span> and I am experienced Full Stack <span className="bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text">(MERN) </span>developer , I consider myself a web enthusiast. I am constantly intrigued by the ever-changing technology landscape and strive to stay updated by actively building and learning new things.
+                    I am currently exploring  <span  className="bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text"></span> <span  className="bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text">FastAPI </span><span className="text-yellow-200"> </span> and I am experienced Full Stack <span className="bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text">(MERN) </span>developer , I consider myself a web enthusiast. I am constantly intrigued by the ever-changing technology landscape and strive to stay updated by actively building and learning new things.
                 </motion.p>
                 <SocialLinks />
             </div>

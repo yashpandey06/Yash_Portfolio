@@ -28,7 +28,7 @@ const App = () => {
       {
         load ? <Loader load={load} setLoad={setLoad} /> :
           <>
-            <div className="App">
+            <div className="App min-h-screen w-screen">
               <Routes>
                 <Route path="/" element={<Layout />}>
                   <Route index element={<Home />} />

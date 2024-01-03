@@ -7,7 +7,7 @@ const Header = ({ bar, handelbar }) => {
 
     return (
         <header id="header" className="p-4 ">
-            <nav className="flex flex-row justify-between grow items-center my-2 mx-auto bg-fixed ">
+            <nav className="flex flex-row justify-between grow items-center my-2 mx-auto ">
 
                 <NavLink className="flex gap-4" to="/">
                     <div className="text-3xl font-medium flex flex-row gap-5 ">
