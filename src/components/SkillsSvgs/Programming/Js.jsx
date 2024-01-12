@@ -8,7 +8,7 @@ export default function Js() {
         width="100"
         height="100"
         viewBox="0 0 64 64"
-        className="w-12 h-12"
+        className="w-full h-20"
       >
         <ellipse cx="32" cy="61" opacity=".3" rx="20" ry="3"></ellipse>
         <path

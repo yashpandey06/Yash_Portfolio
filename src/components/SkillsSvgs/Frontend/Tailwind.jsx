@@ -4,7 +4,7 @@ export default function Tailwind() {
     <div  className="w-fit">
       <svg
         viewBox="0 0 248 31"
-        className="text-slate-900 dark:text-white w-auto h-5 "
+        className="text-slate-900 dark:text-white w-auto lg:h-10 md:h-8 h-5"
       >
         <path
           fillRule="evenodd"

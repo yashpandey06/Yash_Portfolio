@@ -8,6 +8,7 @@ import { useEffect, useState } from "react"
 import Loader from "./components/Loader/Loader"
 
 import Skills from "./components/Skills"
+import DynamicSkill from "./components/DynamicSkillsPages/DynamicSkill"
 
 const App = () => {
   const [load, setLoad] = useState(false);
@@ -28,7 +29,7 @@ const App = () => {
       {
         load ? <Loader load={load} setLoad={setLoad} /> :
           <>
-            <div className="App min-h-screen w-screen">
+            <div className="App ">
               <Routes>
                 <Route path="/" element={<Layout />}>
                   <Route index element={<Home />} />
@@ -36,6 +37,7 @@ const App = () => {
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/projects" element={<Project />} />
                   <Route path="/skills" element={<Skills />} />
+                  <Route path="/skills/:category" element={<DynamicSkill />} />
                 </Route>
               </Routes>
             </div>

@@ -9,7 +9,7 @@ export default function Python() {
         width="100"
         height="100"
         viewBox="0 0 100 100"
-        className="w-12 h-12"
+        className="w-full h-20"
       >
         <path
           fill="#472b29"

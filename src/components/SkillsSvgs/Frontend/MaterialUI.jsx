@@ -8,7 +8,7 @@ export default function MaterialUI() {
         height="32"
         viewBox="0 0 36 32"
         fill="none"
-        className="css-1170n61  w-12 h-12"
+        className="css-1170n61  w-full h-20"
       >
         <path
           fillRule="evenodd"

@@ -8,7 +8,7 @@ export default function Ts() {
         width="100"
         height="100"
         viewBox="0 0 48 48"
-        className="w-12 h-12"
+        className="w-full h-20"
       >
         <linearGradient
           id="atmafua87GAY-Q3DVUuwga_nCj4PvnCO0tZ_gr1"

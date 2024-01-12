@@ -8,7 +8,7 @@ export default function Github() {
         width="100"
         height="100"
         viewBox="0 0 100 100"
-        className=" w-12 h-12"
+        className="w-full h-20"
       >
         <circle cx="50" cy="50" r="30" fill="#4e6e91"></circle>
         <path

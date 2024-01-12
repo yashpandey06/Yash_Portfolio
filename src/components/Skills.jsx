@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import ExpressJs from "./SkillsSvgs/Backend/ExpressJs";
 import FastApi from "./SkillsSvgs/Backend/FastApi";
 import Firebase from "./SkillsSvgs/Backend/Firebase";
@@ -18,12 +19,11 @@ import Github from "./SkillsSvgs/Tools/Github";
 import PostMan from "./SkillsSvgs/Tools/PostMan";
 import Figma from "./SkillsSvgs/Tools/Figma";
 import Canva from "./SkillsSvgs/Tools/Canva";
-import { motion } from "framer-motion";
 
 const Skills = () => {
   const [skills] = useState([
     {
-      category: "Programming Languages",
+      category: "Languages",
       skills: [
         { id: 1, item: <Ts /> },
         { id: 2, item: <Js /> },
@@ -69,27 +69,17 @@ const Skills = () => {
   ]);
 
   return (
-    <div className="flex w-full h-full items-center justify-center flex-col lg:-mt-14 md:-mt-10 -mt-8">
+    <div className="w-full h-full grid grid-rows-4 place-items-center gap-10">
       {skills.map((category) => (
-        <div
-          key={category.category}
-          className="flex flex-col gap-5 items-center my-1"
+        <NavLink
+          key={category.id}
+          to={`/skills/${category.category}`}
+          className="font-medium text-2xl bg-gradient-to-b from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text"
         >
-          <div className="text-3xl italic fonr-bold">{category.category}</div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ type: "spring", stiffness: 70, duration: 0.5 }}
-            className="flex lg:gap-16 md:gap-8 gap-4 items-center"
-          >
-            {category.skills.map((skill) => (
-              <div className="hover:scale-125 duration-200 " key={skill.id}>
-                {skill.item}
-              </div>
-            ))}
-          </motion.div>
-        </div>
+          <div className="flex flex-col gap-5 items-center my-2">
+            <div className="text-3xl font-bold">{category.category}</div>
+          </div>
+        </NavLink>
       ))}
     </div>
   );

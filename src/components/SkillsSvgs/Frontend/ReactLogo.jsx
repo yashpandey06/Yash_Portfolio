@@ -6,7 +6,7 @@ export default function ReactLogo() {
         height="100%"
         fill="none"
         viewBox="-10.5 -9.45 21 18.9"
-        className="text-sm me-0 w-12 h-12 text-link dark:text-link-dark flex origin-center transition-all ease-in-out "
+        className="text-sm me-0 w-full h-20 text-link dark:text-link-dark flex origin-center transition-all ease-in-out "
       >
         <circle cx="0" cy="0" r="2" fill="currentColor"></circle>
         <g stroke="currentColor" strokeWidth="1" fill="none">
